@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Landing Page</title>
+	<title>Restaurants</title>
+	<link type="text/css" rel="stylesheet" href="{{ url_for('static',filename='styles/stylesheet.css') }}"/>
 </head>
 <body>
+	
 	<h1>Restaurant List</h1>
 	
 	{% for i in restaurants %}
 
-	<a href='{{url_for('restaurantMenu', restaurant_id = restaurant.id)}}' >{{i.name}}</a>
+	<a href='{{url_for('restaurantMenu', restaurant_id = i.id)}}' >{{i.name}}</a>
 
 	</br>
 

@@ -15,13 +15,13 @@ session = DBSession()
 def restaurantList():
     restaurants = session.query(Restaurant).all()
     #items = session.query(Restaurant).filter_by(restaurant_id=restaurant.id)
-    output = ''
-    for i in restaurants:
-        output += "<a href ='/restaurants/%s/'>%s</a>" % (i.id, i.name)
-        output += '</br>'
-        output += '</br>'
-    return output
-    #return render_template('restaurantlist.html')
+    #output = ''
+    #for i in restaurants:
+    #    output += "<a href ='/restaurants/%s/'>%s</a>" % (i.id, i.name)
+    #    output += '</br>'
+    #    output += '</br>'
+    #return output
+    return render_template('restaurantlist.html', restaurants=restaurants)
 
 @app.route('/restaurants/<int:restaurant_id>/')
 def restaurantMenu(restaurant_id):

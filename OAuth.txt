@@ -1,0 +1,7 @@
+Here is your client ID:
+
+712627506999-iilrblvfuekgbtjq0r10vtp9ik6eviin.apps.googleusercontent.com
+
+Here is your client secret
+
+rKmZpKLA1gRJ8NPsgpyjo38b
